@@ -16,7 +16,7 @@ def number_of_elements_in_box n
   8 * (n - 1)
 end
 
-def manhatten_distance(input = 368078)
+def manhattan_distance(input = 368078)
   return 0 if input == 1
 
   n = 1
@@ -30,7 +30,7 @@ def manhatten_distance(input = 368078)
   return (n - 1) + ((((highest_number_in_box(n) - input) % side )) - offset_from_middle).abs
 end
 
-p manhatten_distance()
+p manhattan_distance()
 
 
 
