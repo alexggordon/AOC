@@ -204,7 +204,7 @@ input = %w(1899
 input.each do |x|
   input.each do |y|
     input.each do |z|
-      next if [x,y,z].uniq.count == 2
+      next if [x,y,z].uniq.count < 3
       if (x+y+z == 2020)
         puts "#{x}, #{y}, #{z}: #{x * y * z}"
         exit
